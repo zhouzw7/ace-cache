@@ -1,11 +1,11 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.github.wxiaoqi</groupId>
+    <groupId>com.github.zhouzw7</groupId>
     <artifactId>ace-cache</artifactId>
     <version>0.0.2</version>
     <name>ace-cache</name>
-    <url>https://github.com/wxiaoqi/ace-cache</url>
+    <url>https://github.com/zhouzw7/ace-cache</url>
     <licenses>
         <license>
             <name>Apache 2</name>
@@ -17,7 +17,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>1.4.2.RELEASE</version>
+        <version>2.2.1.RELEASE</version>
     </parent>
     <dependencies>
         <dependency>
@@ -36,6 +36,7 @@
         <dependency>
             <groupId>redis.clients</groupId>
             <artifactId>jedis</artifactId>
+            <version>2.9.0</version>
         </dependency>
         <dependency>
             <groupId>com.alibaba</groupId>
@@ -55,17 +56,22 @@
             <groupId>javax.servlet</groupId>
             <artifactId>javax.servlet-api</artifactId>
         </dependency>
+        <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+            <version>1.2.17</version>
+        </dependency>
     </dependencies>
     <scm>
-        <connection>scm:git:https://github.com/wxiaoqi/ace-cache.git</connection>
-        <developerConnection>scm:git:https://github.com/wxiaoqi/ace-cache.git</developerConnection>
-        <url>https://github.com/wxiaoqi/ace-cache</url>
+        <connection>scm:git:https://github.com/zhouzw7/ace-cache.git</connection>
+        <developerConnection>scm:git:https://github.com/zhouzw7/ace-cache.git</developerConnection>
+        <url>https://github.com/zhouzw7/ace-cache</url>
         <tag>0.0.2</tag>
     </scm>
     <developers>
         <developer>
-            <name>WangHaoBin</name>
-            <email>463540703@qq.com</email>
+            <name>zhouzw7</name>
+            <email>872252672@qq.com</email>
         </developer>
     </developers>
     <distributionManagement>
