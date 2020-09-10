@@ -1,11 +1,11 @@
 package com.ace.cache.service;
 
+import redis.clients.jedis.ListPosition;
+
 import java.util.Date;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
-
-import redis.clients.jedis.BinaryClient.LIST_POSITION;
 
 public interface IRedisService {
 
@@ -68,7 +68,7 @@ public interface IRedisService {
      * 根据前缀移除key
      * </p>
      *
-     * @param keys 一个key 也可以使 string 数组
+     * @param key 一个key 也可以使 string 数组
      * @return 返回删除成功的个数
      */
     Long delPre(String key);
@@ -441,7 +441,7 @@ public interface IRedisService {
      * @param value 添加的value
      * @return
      */
-    Long linsert(String key, LIST_POSITION where, String pivot, String value);
+    Long linsert(String key, ListPosition where, String pivot, String value);
 
     /**
      * <p>
